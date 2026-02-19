@@ -101,16 +101,20 @@ nav ul li a:hover {
     gap: 20px;
 }
 
+/* Image Card Wrapper */
 .gallery img {
     width: 100%;
-    border-radius: 15px;
-    transition: 0.4s;
+    aspect-ratio: 1 / 1;   /* Makes all images square */
+    object-fit: cover;     /* Crops nicely without stretching */
+    border-radius: 20px;
+    transition: 0.4s ease;
     cursor: pointer;
 }
 
 .gallery img:hover {
     transform: scale(1.05);
 }
+
 
 /* About */
 .about {
@@ -145,3 +149,4 @@ footer {
     background: #222;
     color: white;
 }
+
